@@ -105,7 +105,7 @@ Grid.prototype.buildHex = function (size) {
 		this.hex.width = h * 2;
 		this.hex.height = b * 2;
 		this.hex.center = { x : x + h, y : y };
-		this.hex.xSpacing = this.hex.width + this.hex.width / 2,
+		this.hex.xSpacing = this.hex.width + this.hex.width / 2;
 		this.hex.ySpacing = this.hex.height;
 		hex[1] = { x : hex[0].x + a, y : hex[0].y - b };
 		hex[2] = { x : hex[1].x + h, y : hex[1].y };
@@ -117,7 +117,7 @@ Grid.prototype.buildHex = function (size) {
 		this.hex.width = b * 2;
 		this.hex.height = h * 2;
 		this.hex.center = { x : x + b, y : y + a };
-		this.hex.xSpacing = this.hex.width,
+		this.hex.xSpacing = this.hex.width;
 		this.hex.ySpacing = this.hex.height + this.hex.height / 2;
 		hex[1] = { x : hex[0].x + b, y : hex[0].y - a };
 		hex[2] = { x : hex[1].x + b, y : hex[1].y + a };
@@ -127,4 +127,3 @@ Grid.prototype.buildHex = function (size) {
 	}
 	return hex;
 };
-
