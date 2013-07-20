@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js" type="text/javascript"></script>
+		<script src="Grid.js"></script>
+		<script>
+			
+
+			dojo.ready(function () {
+				var grid = new Grid();
+				dojo.connect(grid.canvas, 'click', grid, grid.click);
+				grid.draw();
+			});
+		</script>
+		<style>
+			canvas#canvas { background: #FAFAFA; }
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="1550" height="1550"></canvas>
+	</body>
+</html>
